@@ -83,7 +83,7 @@ public class BaseClass {
 	public static void screensshots(String screens) throws Throwable {
 		TakesScreenshot tk = (TakesScreenshot) driver;
 		File temp = tk.getScreenshotAs(OutputType.FILE);
-		File Perman = new File(screens);
+		File Perman = new File("D:\\Selenium\\SeleniumScreen\\Minted.com\\"+screens);
 		FileUtils.copyFile(temp, Perman);
 
 	}
